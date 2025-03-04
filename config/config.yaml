@@ -1,0 +1,7 @@
+gdelt_api:
+  base_url: "https://api.gdeltproject.org/api/v2/doc/doc?query="
+  format: "json"
+
+aws:
+  s3_bucket: "your-s3-bucket-name"
+  region: "us-east-1"
