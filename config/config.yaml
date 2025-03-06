@@ -3,5 +3,7 @@ gdelt_api:
   format: "json"
 
 aws:
-  s3_bucket: "your-s3-bucket-name"
+  s3_bucket: "gsdel-daily-trends"
   region: "us-east-1"
+
+themes: ["EDUCATION", "GENERAL_HEALTH"]
