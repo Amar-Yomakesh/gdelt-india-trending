@@ -1,0 +1,9 @@
+gdelt_api:
+  base_url: "https://api.gdeltproject.org/api/v2/doc/doc?query="
+  format: "json"
+
+aws:
+  s3_bucket: "gsdel-daily-trends"
+  region: "us-east-1"
+
+themes: ["EDUCATION", "GENERAL_HEALTH"]
