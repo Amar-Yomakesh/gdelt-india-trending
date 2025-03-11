@@ -1,9 +1,25 @@
 gdelt_api:
   base_url: "https://api.gdeltproject.org/api/v2/doc/doc?query="
   format: "json"
+  themes:
+    # keep the look up false to work on only standardThemes.
+    # if the lookup is true gdelt is queried for all the themes. there is API restrictions for large volume
+    lookup: false
+    url: "http://data.gdeltproject.org/api/v2/guides/LOOKUP-GKGTHEMES.TXT"
+    standardThemes:
+      [
+        "EDUCATION",
+        "GENERAL_HEALTH",
+        "TAX_FNCACT",
+        "TAX_ETHNICITY",
+        "EPU_POLICY",
+        "CRISISLEX_CRISISLEXREC",
+        "TAX_WORLDLANGUAGES",
+        "SOC_POINTSOFINTEREST",
+        "LEADER",
+        "USPEC_POLITICS_GENERAL1",
+      ]
 
 aws:
   s3_bucket: "gsdel-daily-trends"
   region: "us-east-1"
-
-themes: ["EDUCATION", "GENERAL_HEALTH"]
